@@ -1,30 +1,35 @@
-# Student Record System
+## Student Record System
 
-## Introduction
-  The Student Record System is a C++ based application designed for managing and tracking student records in an academic setting. It allows for efficient handling of student data, including personal details, academic progress, and course management.  
+The Student Record System is a C++ based application designed for managing and tracking student records in an academic setting. It allows for efficient handling of student data, including personal details, academic progress, and course management.
+
+{TODO Image  Placeholder for Project Overview}
+
+## Table of Contents
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
 
 ## Technologies Used
 - C++
 - Makefile for compilation and building
 
 ## Features
-- Add, remove, and manage student records.
-- Print all student details, including emails and average days in courses.
-- Filter and display students by specific degree programs.
-- Validate and display invalid email addresses.
+- Addition, removal, and management of student records.
+- Capability to print all student details, including emails and average days in courses.
+- Functionality to filter and display students by specific degree programs.
+- Tools to validate and showcase invalid email addresses.
 
 ## Installation
-To install and run this project, follow these steps:  
-1. Clone the repository to your local machine.
-2. Navigate to the project directory.
-3. Use the Makefile to compile the project: `make all`
-4. Run the compiled executable.
+Follow these steps to install and execute the project:
+1. Clone the repository to your local system.
+2. Move to the project directory.
+3. Compile the project using the Makefile: `make all`.
+4. Execute the compiled binary.
 
 ## Usage
-  After running the executable, the application will display various options for managing and viewing student records. Users can add new records, remove existing ones, and query the database for specific student information.  
-
-## Contributing
-  Contributions to this project are welcome. Please ensure to follow best coding practices and maintain the existing coding style.  
+Upon launching the executable, the application presents various options for managing and retrieving student records. Users can insert new records, delete existing ones, and search the database for particular student details.
 
 ## License
-  This project is open-sourced under the MIT License. See the LICENSE file for more details.
+[MIT License](LICENSE)
