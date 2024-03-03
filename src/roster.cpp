@@ -4,19 +4,19 @@
 using namespace std;
 
 
-// Define the data table for student information
+//StudentData Table (Req. A)
 const string studentData[] = 
     {"A1,John,Smith,John1989@gm ail.com,20,30,35,40,SECURITY",
     "A2,Suzan,Erickson,Erickson_1990@gmailcom,19,50,30,40,NETWORK",
     "A3,Jack,Napoli,The_lawyer99yahoo.com,19,20,40,33,SOFTWARE", 
     "A4,Erin,Black,Erin.black@comcast.net,22,50,58,40,SECURITY", 
-    "A5,Wonyoung,Jang,wjang@wgu.edu,26,40,50,60,SOFTWARE"};
+    "A5,Tom,Blake,t_blake@hotmail.com,26,40,50,60,SOFTWARE"};
 
 Roster::Roster() {
     int wordIndex[9];
     int indexCount = 0;
     int i;
-    // Process each student entry in the student data table.
+    //For EVERY Student
     for (i = 0; i < 5; i++) {
         classRosterArray[i] = new Student();
         int p;
@@ -34,7 +34,7 @@ Roster::Roster() {
         int rangeSubString = 0;
         int x;
 
-        // Parse each line of the student data table for processing.
+        //For EVERY line of table data
         for (x = 0; x < 9; x++) {
 
             if (x == 0) {
@@ -166,8 +166,8 @@ void Roster::printInvalidEmails() {
     string email;
     int i;
     int x;
-    int invalid = 0; // Index 0: For specific data handling.
-    int valid = 0; // Index 2: For specific data handling.
+    int invalid = 0; //0
+    int valid = 0; //2
     for (i = 0; i < 5; i++) {
         email = classRosterArray[i]->GetEmailAddress();
         for (x = 0; x < email.size() + 1; x++) {

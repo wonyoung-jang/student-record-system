@@ -3,7 +3,8 @@
 #include "student.h"
 using namespace std;
 
-// Define accessor functions for student class properties
+
+//Accessor Functions
 string Student::GetStudentID() const {
     return studentID;
 }
@@ -42,7 +43,7 @@ DegreeProgram Student::GetDegreeName() const {
     return degreeName;
 }
 
-// Define mutator functions to set student class properties.
+//Mutator Functions
 void Student::SetStudentID(string studentIDToSet) {
     studentID = studentIDToSet;
 }
@@ -73,7 +74,7 @@ void Student::SetDegreeName(DegreeProgram degreeNameToSet) {
     degreeName = degreeNameToSet;
 }
 
-// Constructor function to initialize a new student object.
+//Constructor Function
 Student::Student() {
     studentID = "noID";
     firstname = "noFirst";
@@ -85,7 +86,6 @@ Student::Student() {
     daysToCompleteCourse[2] = 0;
     degreeName = SOFTWARE;
 }
-
 Student::Student(string a, 
             string b, 
             string c,
@@ -104,9 +104,9 @@ Student::Student(string a,
     daysToCompleteCourse[1] = g;
     daysToCompleteCourse[2] = h;
     degreeName = i;
-}
+    }
 
-// Function to print the details of a student object.
+//Print Function
 void Student::Print() const {
     string degreeString;
     if (degreeName == 0) {

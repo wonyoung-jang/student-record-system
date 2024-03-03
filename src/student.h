@@ -6,7 +6,7 @@ using namespace std;
 
 class Student {
     public:
-        // Construct a Student object initializing all member variables.
+        // Constructor with all variables
         Student();
         Student(string a, 
             string b, 
@@ -17,10 +17,10 @@ class Student {
             int g, 
             int h, 
             DegreeProgram i);
-        // Output the details of a student object to the console.
+        // Print function for each student
         void Print() const;
 
-        // Accessors (Getters)
+        // Accessors (getters)
         string GetStudentID() const;
         string GetFirstName() const;
         string GetLastName() const;
@@ -29,7 +29,7 @@ class Student {
         string GetDaysToCompleteCourse() const;      
         DegreeProgram GetDegreeName() const;
 
-        // Mutators (Setters)
+        // Mutators (setters)
         void SetStudentID(string studentIDToSet);
         void SetFirstName(string firstnameToSet);
         void SetLastName(string lastnameToSet);
@@ -39,12 +39,12 @@ class Student {
         void SetDegreeName(DegreeProgram degreeNameToSet);
 
     private:
-        // Private Variables
+        // Variables
         string studentID;
         string firstname;
         string lastname;
         string emailAddress;
         int age;
-        int daysToCompleteCourse[3]; // Array storing days to complete each of the three courses.
-        DegreeProgram degreeName; // Degree program the student is enrolled in, represented as an enum.
+        int daysToCompleteCourse[3]; //array
+        DegreeProgram degreeName; //enum
 };
